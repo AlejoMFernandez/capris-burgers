@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capri's Burgers · Smash burgers en Núñez</title>
+<meta name="description" content="La carta de Capri's, la rueda del zodíaco y tu pedido para retirar en Vuelta de Obligado 3300, Núñez. Pedí acá, retirá acá.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capri's Burgers">
+<meta property="og:url" content="https://capris-burgers.vercel.app/">
+<meta property="og:title" content="Capri's Burgers · ¿Qué burger sos según tu signo?">
+<meta property="og:description" content="La carta de Capri's, la rueda del zodíaco y tu pedido para retirar en Núñez.">
+<meta property="og:image" content="https://capris-burgers.vercel.app/img/og.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Capri's Burgers · Smash burgers con signo propio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://capris-burgers.vercel.app/img/og.jpg?v=1">
+<meta name="theme-color" content="#0135C9">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script>
+  (function () { var d = document.documentElement; d.classList.add('js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('con-intro'); })();
+</script>
+<link rel="preload" href="fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fuentes.css?v=1">
+<link rel="preload" as="image" href="img/h/burger-arco-m.webp" imagesrcset="img/h/burger-arco-m.webp 520w, img/h/burger-arco.webp 720w" imagesizes="(min-width: 1100px) 420px, 70vw">
+<link rel="stylesheet" href="kit/kit.css?v=1">
+<link rel="stylesheet" href="css/capris.css?v=1">
+</head>
+<body>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro__cinta"></div>
+  <img class="intro__logo" src="img/logo-blanco.svg" alt="" width="441" height="235">
+  <p class="intro__neon">Goat<br>for<br>smash</p>
+  <div class="intro__persiana"></div>
+</div>
+
+<a class="saltar" href="#carta">Ir a la carta</a>
+
+<header class="top" id="top">
+  <div class="top__in">
+    <a class="marca" href="#inicio" aria-label="Capri's Burgers, inicio"><img src="img/logo-azul.svg" alt="" width="441" height="235"></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#carta">Carta</a><a href="#rueda">Tu signo</a><a href="#obra">La obra</a><a href="#nosotros">Nosotros</a><a href="#donde">Dónde estamos</a>
+    </nav>
+    <div class="top__acc">
+      <button type="button" class="top__carro" data-kit-open="carrito" data-kit-target aria-label="Ver tu bandeja">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18l-2 10H5L3 9z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>
+        <span class="solo-d">Tu bandeja</span><b class="top__n" hidden>0</b>
+      </button>
+      <a class="top__cta solo-d" href="#carta">Pedí acá</a>
+      <button type="button" class="top__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-m">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-m" id="menu-m" hidden>
+  <nav aria-label="Menú">
+    <a href="#carta">Carta</a><a href="#rueda">Tu signo</a><a href="#como">Cómo pedir</a><a href="#obra">La obra</a><a href="#nosotros">Nosotros</a><a href="#donde">Dónde estamos</a>
+  </nav>
+  <p class="menu-m__pie">Vuelta de Obligado 3300 · Núñez</p>
+</div>
+
+<main id="inicio">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-t">
+    <div class="damero damero--top" aria-hidden="true"></div>
+    <div class="hero__in cont">
+      <div class="hero__txt">
+        <p class="kicker hero__k"><span class="linea"><span>Vuelta de Obligado 3300 · Núñez</span></span></p>
+        <h1 class="hero__t" id="hero-t">
+          <span class="linea"><span>Smash</span></span>
+          <span class="linea"><span>burgers con</span></span>
+          <span class="linea"><span>signo propio</span></span>
+        </h1>
+        <p class="hero__d">La Capri de Lucho ♑︎, la Apple Bacon de Sol ♒︎ y la Mustard Chili que pica. Simple, doble o triple. Pedí desde acá y retirá en el mostrador sin hacer la fila.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--azul" href="#carta">Pedí acá <span aria-hidden="true">→</span></a>
+          <a class="btn btn--linea" href="#rueda">¿Qué burger sos?</a>
+        </div>
+      </div>
+      <div class="hero__fig">
+        <figure class="arco">
+          <img src="img/h/burger-arco-m.webp" srcset="img/h/burger-arco-m.webp 520w, img/h/burger-arco.webp 720w" sizes="(min-width: 1100px) 420px, 70vw" width="720" height="1280" alt="Capri Cheeseburger doble con cheddar derretido" fetchpriority="high" decoding="async">
+        </figure>
+        <span class="hero__sello"><b data-precio-desde="capri-cheeseburger">Desde $10.500</b><small>Capri Cheeseburger</small></span>
+        <div class="hero__cabra"><img src="img/cabra-m.webp" srcset="img/cabra-m.webp 520w, img/cabra.webp 900w" sizes="(min-width: 1100px) 360px, 46vw" width="900" height="1097" alt="La cabra de Capri's con una burger en la mano" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+    <div class="damero" aria-hidden="true"></div>
+  </section>
+
+  <!-- RUEDA -->
+  <section class="rueda-sec" id="rueda" aria-labelledby="rueda-t">
+    <div class="cont">
+      <header class="sec-cab sec-cab--claro rv">
+        <p class="kicker">Capri's viene de Capricornio</p>
+        <h2 class="sec-t" id="rueda-t">¿Qué burger sos?</h2>
+        <p class="sec-d">Cada burger nació del signo de uno de los fundadores. Girá la rueda (o tocá tu signo) y la cabra te dice cuál es la tuya.</p>
+      </header>
+
+      <div class="rueda-wrap rv">
+        <div class="rueda" data-rueda>
+          <div class="rueda__fondo" aria-hidden="true"></div>
+          <div class="rueda__aro" data-aro></div>
+          <div class="rueda__aguja" aria-hidden="true"><svg viewBox="0 0 60 44"><path d="M30 44 L18 18 C14 10 6 6 2 8 C8 2 18 2 24 10 L30 18 L36 10 C42 2 52 2 58 8 C54 6 46 10 42 18 Z"/></svg></div>
+          <div class="rueda__centro" data-centro aria-live="polite">
+            <div class="rc rc--inv" data-rc-inv>
+              <img src="img/logo-azul.svg" alt="" width="441" height="235" class="rc__logo">
+              <p class="rc__inv-t">Girá y encontrá tu burger</p>
+              <p class="rc__inv-d">Arrastrá la rueda o tocá tu signo</p>
+            </div>
+            <div class="rc rc--burger" data-rc-burger hidden>
+              <img class="rc__foto" data-rc-foto src="img/p/capri.webp" width="600" height="600" alt="">
+              <p class="rc__signo" data-rc-signo>♑︎ Capricornio · tierra</p>
+              <h3 class="rc__n" data-rc-nombre>Capri Cheeseburger</h3>
+              <p class="rc__d" data-rc-desc>La de Lucho: pepinillos y salsa Capri.</p>
+              <div class="rc__ctl solo-d">
+                <div class="rc__tam" role="radiogroup" aria-label="Tamaño" data-tam></div>
+                <button type="button" class="rc__sumar" data-rc-sumar><span data-rc-precio>$14.000</span> · A la bandeja +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rueda__bandeja solo-m" aria-label="Tamaño y sumar">
+          <div class="rc__tam" role="radiogroup" aria-label="Tamaño" data-tam></div>
+          <button type="button" class="rc__mas" data-rc-sumar aria-label="Sumar a la bandeja"><span aria-hidden="true">+</span></button>
+        </div>
+        <ul class="rueda__leyenda" aria-label="Cada elemento, una burger">
+          <li><b>Tierra</b> ♉︎ ♍︎ ♑︎ <span>Capri Cheeseburger</span></li>
+          <li><b>Aire</b> ♊︎ ♎︎ ♒︎ <span>Apple Bacon</span></li>
+          <li><b>Fuego</b> ♈︎ ♌︎ ♐︎ <span>Mustard Chili</span></li>
+          <li><b>Agua</b> ♋︎ ♏︎ ♓︎ <span>Capri con medallón veggie</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="carta" id="carta" aria-labelledby="carta-t">
+    <div class="damero damero--top" aria-hidden="true"></div>
+    <div class="cont">
+      <header class="sec-cab rv">
+        <p class="kicker">Para comer acá o retirar</p>
+        <h2 class="sec-t" id="carta-t">La carta</h2>
+        <p class="sec-d">Tocá el precio del tamaño que querés y va directo a tu bandeja. La retirás en el mostrador cuando está lista.</p>
+      </header>
+
+      <div class="carta__tabs solo-m" role="tablist" aria-label="Secciones de la carta">
+        <button type="button" role="tab" class="ctab is-on" aria-selected="true" data-g="burgers">Burgers</button>
+        <button type="button" role="tab" class="ctab" aria-selected="false" data-g="sides">Sides</button>
+        <button type="button" role="tab" class="ctab" aria-selected="false" data-g="drinks">Drinks</button>
+        <button type="button" role="tab" class="ctab" aria-selected="false" data-g="dips">Salsas</button>
+      </div>
+
+      <div class="carta__grid">
+        <div class="carta__top">
+        <div class="carta__grupo carta__grupo--burgers is-on" data-grupo="burgers">
+          <div class="ccab">
+            <h3 class="ccab__t">Burgers</h3><span class="ccab__l" aria-hidden="true"></span>
+            <span class="ccab__col solo-d">Simple</span><span class="ccab__col solo-d">Doble</span><span class="ccab__col solo-d">Triple</span>
+          </div>
+          <div data-kit="carta" data-kit-categorias="burgers" id="carta-burgers"></div>
+          <label class="veggie"><input type="checkbox" data-veggie> <span>Reemplazá la carne por un medallón veggie</span></label>
+        </div>
+        <aside class="carta__foto solo-d" aria-hidden="true">
+          <figure class="arco arco--chico"><img data-cfoto src="img/p/capri.webp" width="600" height="600" alt="" loading="lazy" decoding="async"></figure>
+          <p data-cfoto-n>Capri Cheeseburger</p>
+        </aside>
+        </div>
+
+        <div class="carta__otros">
+          <div class="carta__cabra solo-d" aria-hidden="true"><img src="img/cabra-m.webp" width="520" height="634" alt="" loading="lazy" decoding="async"></div>
+          <div class="carta__grupo" data-grupo="sides">
+            <div class="ccab"><h3 class="ccab__t">Sides</h3><span class="ccab__l" aria-hidden="true"></span></div>
+            <div data-kit="carta" data-kit-categorias="sides" id="carta-sides"></div>
+          </div>
+          <div class="carta__grupo" data-grupo="drinks">
+            <div class="ccab"><h3 class="ccab__t">Drinks</h3><span class="ccab__l" aria-hidden="true"></span></div>
+            <div data-kit="carta" data-kit-categorias="drinks" id="carta-drinks"></div>
+          </div>
+          <div class="carta__grupo" data-grupo="dips">
+            <div class="ccab"><h3 class="ccab__t">Agregá la salsa</h3><span class="ccab__l" aria-hidden="true"></span></div>
+            <div data-kit="carta" data-kit-categorias="dips" id="carta-dips"></div>
+          </div>
+        </div>
+      </div>
+      <p class="carta__pie">La carta tiene su propia página para el QR del mostrador: <a href="carta/">ver la carta</a>.</p>
+    </div>
+    <div class="damero" aria-hidden="true"></div>
+  </section>
+
+  <!-- COMO -->
+  <section class="como" id="como" aria-labelledby="como-t">
+    <div class="cont">
+      <header class="sec-cab rv">
+        <p class="kicker">Igual que en el mostrador</p>
+        <h2 class="sec-t" id="como-t">Pedí acá. Retirá acá.</h2>
+      </header>
+      <ol class="pasos">
+        <li class="paso rv">
+          <figure class="paso__f"><img src="img/g/interior.webp" width="540" height="820" alt="La barra de Capri's con las pantallas del menú" loading="lazy" decoding="async"></figure>
+          <span class="paso__n">1</span>
+          <h3 class="paso__t">Pedí acá</h3>
+          <p class="paso__d">Elegí en la carta o en la rueda: simple, doble o triple, y si querés con medallón veggie.</p>
+        </li>
+        <li class="paso rv">
+          <figure class="paso__f"><img src="img/g/bolsa.webp" width="480" height="853" alt="Bolsa azul de Capri's bajo el neón GOAT FOR SMASH" loading="lazy" decoding="async"></figure>
+          <span class="paso__n">2</span>
+          <h3 class="paso__t">Pagá como quieras</h3>
+          <p class="paso__d">Con Mercado Pago desde el celu, o al retirar. Nos llega el pedido ordenado, con tu nombre.</p>
+        </li>
+        <li class="paso rv">
+          <figure class="paso__f"><img src="img/g/barra.webp" width="540" height="680" alt="Pedidos listos en la barra con papas y Coca" loading="lazy" decoding="async"></figure>
+          <span class="paso__n">3</span>
+          <h3 class="paso__t">Retirá acá</h3>
+          <p class="paso__d">Te decimos a qué hora está. Pasás por el mostrador, decís tu número y listo. Sin fila.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- OBRA -->
+  <section class="obra" id="obra" aria-labelledby="obra-t">
+    <div class="cont">
+      <header class="sec-cab rv">
+        <p class="kicker">46 partes en Instagram</p>
+        <h2 class="sec-t" id="obra-t">De instituto de inglés a hamburguesería</h2>
+        <p class="sec-d">Lucho, Sol y Facu hicieron la obra con sus manos y la contaron paso a paso. Deslizá para ver cómo la esquina se volvió azul.</p>
+      </header>
+    </div>
+    <div class="obra__pista" data-pista tabindex="0" aria-label="Fotos de la obra, deslizá para ver más">
+      <figure class="obra__c"><img src="img/obra/057.webp" width="480" height="444" alt="Los tres socios con cascos en la puerta del instituto" loading="lazy" decoding="async"><figcaption><b>Parte 1</b> Bienvenidos al comienzo de esta locura</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/055.webp" width="480" height="444" alt="Escombros de la demolición" loading="lazy" decoding="async"><figcaption><b>Parte 3</b> El quilombo que estamos haciendo</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/048.webp" width="480" height="444" alt="Paredes revocadas" loading="lazy" decoding="async"><figcaption><b>Parte 10</b> Ya pasaron 10 días</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/045.webp" width="480" height="444" alt="Prueba de pintura azul en la pared" loading="lazy" decoding="async"><figcaption><b>Parte 13</b> El azul, por primera vez</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/043.webp" width="480" height="444" alt="La barra en construcción" loading="lazy" decoding="async"><figcaption><b>Parte 15</b> La barra ya quedó</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/034.webp" width="480" height="444" alt="El frente abierto para que entre luz" loading="lazy" decoding="async"><figcaption><b>Parte 24</b> Por qué Capri's</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/023.webp" width="480" height="444" alt="Silla azul con el logo de Capri's" loading="lazy" decoding="async"><figcaption><b>Parte 35</b> Algo para los curiosos</figcaption></figure>
+      <figure class="obra__c"><img src="img/obra/005.webp" width="480" height="444" alt="Las pantallas del menú sobre la barra" loading="lazy" decoding="async"><figcaption><b>Parte 46</b> Ya tenemos las pantallas del menú</figcaption></figure>
+      <figure class="obra__c obra__c--fin"><img src="img/fachada-dia-m.webp" width="800" height="593" alt="La esquina terminada, azul, con el letrero de Capri's" loading="lazy" decoding="async"><figcaption><b>6/11</b> Abrimos</figcaption></figure>
+    </div>
+    <div class="cont obra__nav solo-d">
+      <button type="button" class="flecha" data-pista-mover="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button type="button" class="flecha" data-pista-mover="1" aria-label="Siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nos" id="nosotros" aria-labelledby="nos-t">
+    <div class="cont nos__in">
+      <figure class="nos__f rv"><img src="img/fundadores.webp" width="720" height="1280" alt="Facu, Lucho y Sol frente a la esquina azul de Capri's" loading="lazy" decoding="async"></figure>
+      <div class="nos__txt">
+        <header class="sec-cab sec-cab--claro rv">
+          <p class="kicker">Tres socios de 26 años</p>
+          <h2 class="sec-t" id="nos-t">Amigos desde primaria, socios desde siempre</h2>
+          <p class="sec-d">Lucho y Facu se conocieron en primaria y emprenden juntos desde 2014. Sol se sumó después. Una noche de verano Lucho hizo su famosa hamburguesa y apareció la pregunta: “¿y si nos ponemos una hamburguesería?”.</p>
+        </header>
+        <ul class="socios">
+          <li class="socio rv"><span class="socio__s" aria-hidden="true">♑︎</span><b>Lucho</b><span>Capricornio · los números. La cabra de Capri's es suya.</span></li>
+          <li class="socio rv"><span class="socio__s" aria-hidden="true">♒︎</span><b>Sol</b><span>Acuario · la parte creativa. Inventó la Apple Bacon.</span></li>
+          <li class="socio rv"><span class="socio__s" aria-hidden="true">★</span><b>Facu</b><span>La logística: que todo llegue y salga a tiempo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gal" id="galeria" aria-labelledby="gal-t">
+    <div class="cont">
+      <h2 class="neon rv" id="gal-t"><span>Goat</span><span>for</span><span>smash</span></h2>
+      <div class="gal__grid">
+        <figure class="gal__f gal__f--alta rv"><img src="img/g/noche.webp" width="800" height="1067" alt="La esquina de noche con el letrero iluminado" loading="lazy" decoding="async"></figure>
+        <figure class="gal__f rv"><img src="img/g/mordida.webp" width="800" height="1000" alt="Una Capri doble mordida" loading="lazy" decoding="async"></figure>
+        <figure class="gal__f rv"><img src="img/g/preapertura.webp" width="480" height="355" alt="La pre apertura con amigos y el equipo" loading="lazy" decoding="async"></figure>
+        <figure class="gal__f gal__f--alta rv"><img src="img/g/letrero.webp" width="800" height="1000" alt="El letrero Capri's sobre la puerta 3300" loading="lazy" decoding="async"></figure>
+        <figure class="gal__f rv"><img src="img/p/fries.webp" width="240" height="240" alt="Crinkle fries y una smash" loading="lazy" decoding="async"></figure>
+        <figure class="gal__f rv"><img src="img/fachada-dia-m.webp" width="800" height="593" alt="La fachada azul de día" loading="lazy" decoding="async"></figure>
+      </div>
+      <p class="gal__pie"><a class="btn btn--blanco" href="https://www.instagram.com/caprisburgers/" target="_blank" rel="noopener">@caprisburgers en Instagram</a></p>
+    </div>
+  </section>
+
+  <!-- DONDE -->
+  <section class="donde" id="donde" aria-labelledby="donde-t">
+    <div class="cont donde__in">
+      <figure class="donde__f rv"><img src="img/esquina.webp" width="1100" height="1002" alt="Ilustración de la esquina de Capri's en Vuelta de Obligado 3300" loading="lazy" decoding="async"></figure>
+      <div class="donde__txt">
+        <header class="sec-cab rv">
+          <p class="kicker">Núñez, CABA</p>
+          <h2 class="sec-t" id="donde-t">La esquina azul</h2>
+        </header>
+        <dl class="datos rv">
+          <div><dt>Dirección</dt><dd>Vuelta de Obligado 3300, Núñez</dd></div>
+          <div><dt>Horario</dt><dd>Martes a domingo · 19:00 a 00:00 hs <small>[a confirmar]</small><br><span class="estado" data-estado></span></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/caprisburgers/" target="_blank" rel="noopener">@caprisburgers</a></dd></div>
+        </dl>
+        <div class="donde__ctas rv">
+          <a class="btn btn--azul" href="https://www.google.com/maps/search/?api=1&amp;query=Vuelta+de+Obligado+3300%2C+N%C3%BA%C3%B1ez%2C+CABA" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--linea" href="#carta">Pedí acá</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="damero" aria-hidden="true"></div>
+  <div class="cont pie__in">
+    <img class="pie__logo" src="img/logo-blanco.svg" alt="Capri's Burgers" width="441" height="235" loading="lazy">
+    <p class="pie__lema">Goat for smash</p>
+    <nav class="pie__nav" aria-label="Pie">
+      <a href="#carta">Carta</a><a href="carta/">Carta del QR</a><a href="#rueda">Tu signo</a><a href="#donde">Dónde estamos</a><a href="https://www.instagram.com/caprisburgers/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="pie__dir">Vuelta de Obligado 3300 · Núñez · CABA</p>
+    <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+  </div>
+</footer>
+
+<div class="tk-modal" id="ticket" hidden>
+  <div class="tk-modal__fondo" data-tk-cerrar></div>
+  <div class="tk" role="dialog" aria-modal="true" aria-labelledby="tk-t">
+    <button type="button" class="tk__x" data-tk-cerrar aria-label="Cerrar">×</button>
+    <img class="tk__logo" src="img/logo-blanco.svg" alt="Capri's" width="441" height="235">
+    <div class="tk__papel">
+      <p class="tk__k" id="tk-t">Retirá acá</p>
+      <p class="tk__cod" data-tk-cod>#000</p>
+      <p class="tk__sub" data-tk-sub></p>
+    </div>
+    <div class="tk__wa">
+      <p class="tk__wa-k">Así le llega al local</p>
+      <p class="tk__burbuja" data-tk-msg></p>
+    </div>
+    <div class="tk__acc">
+      <a class="btn btn--blanco" data-tk-wa href="#" target="_blank" rel="noopener" hidden>Abrir WhatsApp</a>
+      <button type="button" class="btn btn--linea-b" data-tk-cerrar>Volver a la carta</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+
+<script type="module" src="js/capris.js?v=1"></script>
+</body>
+</html>

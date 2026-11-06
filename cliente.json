@@ -1,0 +1,338 @@
+{
+ "$schema": "https://raw.githubusercontent.com/AlejoMFernandez/kit-demos/main/docs/cliente.schema.json",
+ "id": "capris-burgers",
+ "nombre": "Capri's Burgers",
+ "pais": "AR",
+ "idioma": "es",
+ "modo": "demo",
+ "demoVersion": 1,
+ "whatsapp": "",
+ "instagram": "caprisburgers",
+ "prefijoPedido": "C",
+ "supabase": {
+  "url": "",
+  "anonKey": ""
+ },
+ "marca": {
+  "logo": "img/logo-azul.svg",
+  "logoPanel": "img/logo-blanco.svg",
+  "logoClaro": "img/logo-blanco.svg",
+  "favicon": "img/favicon.png",
+  "colores": {
+   "fondo": "#FFFFFF",
+   "superficie": "#FFFFFF",
+   "texto": "#0B1846",
+   "primario": "#0135C9",
+   "acento": "#F5B400",
+   "borde": "#B6D0F5"
+  },
+  "fuentes": {
+   "titulos": "'Archivo', system-ui, sans-serif",
+   "texto": "'Archivo', system-ui, sans-serif",
+   "googleFonts": ""
+  },
+  "estilo": {
+   "forma": "redondeada",
+   "radio": "16px",
+   "sombra": "dura",
+   "borde": "2px",
+   "mayusculas": true
+  }
+ },
+ "modulos": {
+  "carta": true,
+  "carrito": true,
+  "reservas": false,
+  "admin": true
+ },
+ "horarios": {
+  "lun": [],
+  "mar": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ],
+  "mie": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ],
+  "jue": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ],
+  "vie": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ],
+  "sab": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ],
+  "dom": [
+   [
+    "19:00",
+    "00:00"
+   ]
+  ]
+ },
+ "pedidos": {
+  "salidas": [
+   "whatsapp",
+   "mercadopago"
+  ],
+  "tipos": [
+   "retiro"
+  ],
+  "retiroHoy": {
+   "cadaMin": 15,
+   "prepMin": 15,
+   "asap": true
+  }
+ },
+ "pagos": {
+  "mercadopago": {
+   "endpoint": "https://kit-demos-amf.vercel.app/api/mp-preference",
+   "modo": "sandbox"
+  }
+ },
+ "cartaQR": {
+  "estilo": "marca",
+  "textos": {
+   "titulo": "La carta de Capri's"
+  }
+ },
+ "textos": {
+  "tuPedido": "Tu bandeja",
+  "verPedido": "Tu bandeja",
+  "agregar": "Sumar",
+  "carritoVacio": "La bandeja está vacía. La cabra no.",
+  "carritoVacioSub": "Sumá una smash de la carta y aparece acá.",
+  "enviarPedido": "Pedí acá",
+  "pedidoListo": "Retirá acá",
+  "porWhatsapp": "Lo mando por WhatsApp",
+  "porWhatsappSub": "Pagás al retirar en Vuelta de Obligado 3300",
+  "rhTitulo": "¿Cuándo pasás a retirar?"
+ },
+ "carta": {
+  "categorias": [
+   {
+    "id": "burgers",
+    "nombre": "Burgers"
+   },
+   {
+    "id": "sides",
+    "nombre": "Sides"
+   },
+   {
+    "id": "drinks",
+    "nombre": "Drinks"
+   },
+   {
+    "id": "dips",
+    "nombre": "Agregá la salsa"
+   }
+  ],
+  "productos": [
+   {
+    "id": "capri-cheeseburger",
+    "categoria": "burgers",
+    "nombre": "Capri Cheeseburger",
+    "descripcion": "Pan de papa, carne smash, queso, cebolla, pepinillos & salsa Capri.",
+    "precio": null,
+    "foto": "img/p/capri.webp",
+    "etiquetas": [
+     "casa"
+    ],
+    "variantes": [
+     {
+      "id": "simple",
+      "nombre": "Simple",
+      "precio": 10500
+     },
+     {
+      "id": "doble",
+      "nombre": "Doble",
+      "precio": 14000
+     },
+     {
+      "id": "triple",
+      "nombre": "Triple",
+      "precio": 17500
+     }
+    ],
+    "opciones": [
+     {
+      "id": "carne",
+      "nombre": "Medallón",
+      "valores": [
+       {
+        "id": "smash",
+        "nombre": "Carne smash"
+       },
+       {
+        "id": "veggie",
+        "nombre": "Veggie"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "apple-bacon",
+    "categoria": "burgers",
+    "nombre": "Apple Bacon Burger",
+    "descripcion": "Pan de papa, carne smash, queso, cebolla, manzana caramelizada & bacon.",
+    "precio": null,
+    "foto": "img/p/apple.webp",
+    "etiquetas": [],
+    "variantes": [
+     {
+      "id": "simple",
+      "nombre": "Simple",
+      "precio": 12500
+     },
+     {
+      "id": "doble",
+      "nombre": "Doble",
+      "precio": 16000
+     },
+     {
+      "id": "triple",
+      "nombre": "Triple",
+      "precio": 19500
+     }
+    ],
+    "opciones": [
+     {
+      "id": "carne",
+      "nombre": "Medallón",
+      "valores": [
+       {
+        "id": "smash",
+        "nombre": "Carne smash"
+       },
+       {
+        "id": "veggie",
+        "nombre": "Veggie"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mustard-chili",
+    "categoria": "burgers",
+    "nombre": "Mustard Chili Burger",
+    "descripcion": "Pan de papa, carne smash, queso, cebolla, mostaza & fried jalapeños.",
+    "precio": null,
+    "foto": "img/p/mustard.webp",
+    "etiquetas": [
+     "picante"
+    ],
+    "variantes": [
+     {
+      "id": "simple",
+      "nombre": "Simple",
+      "precio": 13500
+     },
+     {
+      "id": "doble",
+      "nombre": "Doble",
+      "precio": 17000
+     },
+     {
+      "id": "triple",
+      "nombre": "Triple",
+      "precio": 20500
+     }
+    ],
+    "opciones": [
+     {
+      "id": "carne",
+      "nombre": "Medallón",
+      "valores": [
+       {
+        "id": "smash",
+        "nombre": "Carne smash"
+       },
+       {
+        "id": "veggie",
+        "nombre": "Veggie"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "crinkle",
+    "categoria": "sides",
+    "nombre": "Crinkle Fries",
+    "descripcion": "Papas fritas de corte ondulado.",
+    "precio": 4500,
+    "foto": "img/p/fries.webp"
+   },
+   {
+    "id": "crinkle-sazonadas",
+    "categoria": "sides",
+    "nombre": "Crinkle Fries sazonadas",
+    "descripcion": "Corte ondulado con sazón de la casa.",
+    "precio": 4500
+   },
+   {
+    "id": "fried-jalapenos",
+    "categoria": "sides",
+    "nombre": "Fried Jalapeños",
+    "descripcion": "Jalapeños rebozados.",
+    "precio": 5500,
+    "etiquetas": [
+     "picante"
+    ]
+   },
+   {
+    "id": "agua",
+    "categoria": "drinks",
+    "nombre": "Agua mineral",
+    "descripcion": "",
+    "precio": 4500
+   },
+   {
+    "id": "gaseosa",
+    "categoria": "drinks",
+    "nombre": "Gaseosa",
+    "descripcion": "Línea Coca.",
+    "precio": 4500,
+    "foto": "img/p/gaseosa.webp"
+   },
+   {
+    "id": "stella",
+    "categoria": "drinks",
+    "nombre": "Cerveza Stella Artois",
+    "descripcion": "Con y sin alcohol.",
+    "precio": 6000
+   },
+   {
+    "id": "capri-dip",
+    "categoria": "dips",
+    "nombre": "Capri Dip",
+    "descripcion": "La salsa Capri, receta secreta.",
+    "precio": 3000
+   },
+   {
+    "id": "capri-dip-xl",
+    "categoria": "dips",
+    "nombre": "Capri Dip XL",
+    "descripcion": "Para compartir.",
+    "precio": 7000
+   }
+  ]
+ }
+}
