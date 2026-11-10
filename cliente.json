@@ -5,7 +5,7 @@
  "pais": "AR",
  "idioma": "es",
  "modo": "demo",
- "demoVersion": 1,
+ "demoVersion": 2,
  "whatsapp": "",
  "instagram": "caprisburgers",
  "prefijoPedido": "C",
@@ -285,7 +285,8 @@
     "categoria": "sides",
     "nombre": "Crinkle Fries sazonadas",
     "descripcion": "Corte ondulado con sazón de la casa.",
-    "precio": 4500
+    "precio": 4500,
+    "foto": "img/p/fries.webp"
    },
    {
     "id": "fried-jalapenos",
@@ -295,7 +296,8 @@
     "precio": 5500,
     "etiquetas": [
      "picante"
-    ]
+    ],
+    "foto": "img/p/jalapenos.webp"
    },
    {
     "id": "agua",
@@ -310,7 +312,7 @@
     "nombre": "Gaseosa",
     "descripcion": "Línea Coca.",
     "precio": 4500,
-    "foto": "img/p/gaseosa.webp"
+    "foto": "img/p/coca.webp"
    },
    {
     "id": "stella",
@@ -324,7 +326,8 @@
     "categoria": "dips",
     "nombre": "Capri Dip",
     "descripcion": "La salsa Capri, receta secreta.",
-    "precio": 3000
+    "precio": 3000,
+    "foto": "img/p/dip.webp"
    },
    {
     "id": "capri-dip-xl",
