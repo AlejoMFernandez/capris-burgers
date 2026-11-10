@@ -142,7 +142,7 @@ function tplBurger(p, ctx) {
     <div class="bc__tx"><h3 class="bc__n">${esc(p.nombre.replace(/ burger$/i, ''))}</h3>${p.descripcion ? `<p class="bc__d">${esc(corto(p.descripcion))}</p>` : ''}</div>
     ${pedible ? `<div class="bc__pie">
       <div class="seg" role="radiogroup" aria-label="Tamaño de ${esc(p.nombre)}" style="--i:${i}"><span class="seg__pill" aria-hidden="true"></span>
-        ${vs.map((v, k) => `<button type="button" class="seg__b" role="radio" aria-checked="${v.id === sel}" data-seg="${esc(v.id)}" aria-label="${esc(v.nombre)}, ${esc(ctx.money(v.precio))}">${dots(TAM[v.id] || k + 1)}${esc(ctx.money(v.precio))}</button>`).join('')}
+        ${vs.map((v, k) => `<button type="button" class="seg__b" role="radio" aria-checked="${v.id === sel}" data-seg="${esc(v.id)}" aria-label="${esc(v.nombre)}, ${esc(ctx.money(v.precio))}"><span class="seg__t">${esc(v.nombre)}</span><span class="seg__p">${esc(ctx.money(v.precio))}</span></button>`).join('')}
       </div>
       <span class="bc__pw"><button type="button" class="bc__add" data-bc-add aria-label="Sumar ${esc(p.nombre)} ${esc((vs[i]?.nombre || '').toLowerCase())}"><span class="bc__add-t">Sumar · ${esc((vs[i]?.nombre || '').toLowerCase())}</span><span class="bc__add-i" aria-hidden="true">+</span></button><i class="bc__q" hidden></i></span>
     </div>` : `<p class="mi__p">Consultar</p>`}
